@@ -1,0 +1,447 @@
+200 GET /api/user/get/?id=4 (127.0.0.1) 0.00ms
+200 POST /api/user/login (127.0.0.1) 186.07ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 69, in post
+    session_key = user_info['session_key']
+KeyError: 'session_key'
+Uncaught exception POST /api/child/more (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/child/more', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\ChildPhoneHandler.py", line 39, in post
+    wq_bing_phone = await self.manager.create(WqChildPhone, phone=phone, userid=userid)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 193, in create
+    pk = await self.execute(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 595, in insert
+    cursor = await _execute_query_async(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 672, in _read_query_result
+    await result.read()
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 1153, in read
+    first_packet = await self.connection._read_packet()
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 641, in _read_packet
+    packet.raise_for_error()
+AttributeError: 'MysqlPacket' object has no attribute 'raise_for_error'
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\ChildPhoneHandler.py", line 39, in post
+    wq_bing_phone = await self.manager.create(WqChildPhone, phone=phone, userid=userid)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 193, in create
+    pk = await self.execute(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 595, in insert
+    cursor = await _execute_query_async(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 672, in _read_query_result
+    await result.read()
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 1153, in read
+    first_packet = await self.connection._read_packet()
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 641, in _read_packet
+    packet.raise_for_error()
+AttributeError: 'MysqlPacket' object has no attribute 'raise_for_error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/child/more (127.0.0.1) 16.75ms
+Uncaught exception POST /api/child/more (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/child/more', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\ChildPhoneHandler.py", line 39, in post
+    wq_bing_phone = await self.manager.create(WqChildPhone, phone=phone, userid=userid)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 193, in create
+    pk = await self.execute(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 595, in insert
+    cursor = await _execute_query_async(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 672, in _read_query_result
+    await result.read()
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 1153, in read
+    first_packet = await self.connection._read_packet()
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 641, in _read_packet
+    packet.raise_for_error()
+AttributeError: 'MysqlPacket' object has no attribute 'raise_for_error'
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\ChildPhoneHandler.py", line 39, in post
+    wq_bing_phone = await self.manager.create(WqChildPhone, phone=phone, userid=userid)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 193, in create
+    pk = await self.execute(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 595, in insert
+    cursor = await _execute_query_async(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 672, in _read_query_result
+    await result.read()
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 1153, in read
+    first_packet = await self.connection._read_packet()
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 641, in _read_packet
+    packet.raise_for_error()
+AttributeError: 'MysqlPacket' object has no attribute 'raise_for_error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/child/more (127.0.0.1) 8.58ms
+Uncaught exception POST /api/user/login?username=golden&password=123456 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login?username=golden&password=123456', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 52, in post
+    req_data = json.loads(self.request.body)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 52, in post
+    req_data = json.loads(self.request.body)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login?username=golden&password=123456 (127.0.0.1) 14.00ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 93, in post
+    user = await self.manager.create(WqUsers, openid=openid, uuid=user_uuid, session_key=session_key)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 193, in create
+    pk = await self.execute(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 595, in insert
+    cursor = await _execute_query_async(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 672, in _read_query_result
+    await result.read()
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 1153, in read
+    first_packet = await self.connection._read_packet()
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 641, in _read_packet
+    packet.raise_for_error()
+AttributeError: 'MysqlPacket' object has no attribute 'raise_for_error'
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 93, in post
+    user = await self.manager.create(WqUsers, openid=openid, uuid=user_uuid, session_key=session_key)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 193, in create
+    pk = await self.execute(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 595, in insert
+    cursor = await _execute_query_async(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 672, in _read_query_result
+    await result.read()
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 1153, in read
+    first_packet = await self.connection._read_packet()
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 641, in _read_packet
+    packet.raise_for_error()
+AttributeError: 'MysqlPacket' object has no attribute 'raise_for_error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 245.68ms
+200 POST /api/user/login (127.0.0.1) 50246.69ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 69, in post
+    session_key = user_info['session_key']
+KeyError: 'session_key'
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 93, in post
+    user = await self.manager.create(WqUsers, openid=openid, uuid=user_uuid, session_key=session_key)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 193, in create
+    pk = await self.execute(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 595, in insert
+    cursor = await _execute_query_async(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 672, in _read_query_result
+    await result.read()
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 1153, in read
+    first_packet = await self.connection._read_packet()
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 641, in _read_packet
+    packet.raise_for_error()
+AttributeError: 'MysqlPacket' object has no attribute 'raise_for_error'
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 93, in post
+    user = await self.manager.create(WqUsers, openid=openid, uuid=user_uuid, session_key=session_key)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 193, in create
+    pk = await self.execute(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 595, in insert
+    cursor = await _execute_query_async(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 672, in _read_query_result
+    await result.read()
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 1153, in read
+    first_packet = await self.connection._read_packet()
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 641, in _read_packet
+    packet.raise_for_error()
+AttributeError: 'MysqlPacket' object has no attribute 'raise_for_error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 29290.31ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 93, in post
+    user = await self.manager.create(WqUsers, openid=openid, uuid=user_uuid, session_key=session_key)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 193, in create
+    pk = await self.execute(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 595, in insert
+    cursor = await _execute_query_async(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 672, in _read_query_result
+    await result.read()
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 1153, in read
+    first_packet = await self.connection._read_packet()
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 641, in _read_packet
+    packet.raise_for_error()
+AttributeError: 'MysqlPacket' object has no attribute 'raise_for_error'
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 93, in post
+    user = await self.manager.create(WqUsers, openid=openid, uuid=user_uuid, session_key=session_key)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 193, in create
+    pk = await self.execute(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 595, in insert
+    cursor = await _execute_query_async(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 672, in _read_query_result
+    await result.read()
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 1153, in read
+    first_packet = await self.connection._read_packet()
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\aiomysql\connection.py", line 641, in _read_packet
+    packet.raise_for_error()
+AttributeError: 'MysqlPacket' object has no attribute 'raise_for_error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\cg\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 192481.05ms
+200 GET /api/mysql (127.0.0.1) 5.98ms
+200 POST /api/user/loginup?username=golden&password=123456 (127.0.0.1) 4.03ms
+200 POST /api/user/loginup?username=golden&password=123456 (127.0.0.1) 186356.71ms
+200 POST /api/user/loginup?username=golden&password=123456 (127.0.0.1) 15809.23ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py modified; restarting server
+200 POST /api/user/loginup?username=golden&password=123456 (127.0.0.1) 4.86ms
+200 POST /api/user/loginup?username=golden&password=123456 (127.0.0.1) 208271.34ms
+200 POST /api/user/loginup?username=golden&password=123456 (127.0.0.1) 75498.82ms
+200 POST /api/user/loginup?username=golden&password=123456 (127.0.0.1) 157139.45ms
+200 POST /api/user/loginup?username=golden&password=123456 (127.0.0.1) 13878.30ms
+200 POST /api/user/loginup?username=golden&password=123456 (127.0.0.1) 18.82ms
+200 GET /api/user/test/ (127.0.0.1) 0.96ms
+200 GET /api/user/get/?id=4 (127.0.0.1) 2.03ms
+200 POST /api/user/login (127.0.0.1) 239.89ms

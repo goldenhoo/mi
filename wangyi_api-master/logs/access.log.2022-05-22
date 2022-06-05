@@ -1,0 +1,2818 @@
+200 POST /api/user/loginup?username=golden&password=123456 (127.0.0.1) 2.99ms
+200 POST /api/user/loginup?username=golden&password=123456 (127.0.0.1) 11.18ms
+Uncaught exception POST /api/user/login?js_code=003Hhill2lEOd94eNxml23obzF4Hhilc (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login?js_code=003Hhill2lEOd94eNxml23obzF4Hhilc', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 49, in post
+    req_data = json.loads(self.request.body)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 49, in post
+    req_data = json.loads(self.request.body)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login?js_code=003Hhill2lEOd94eNxml23obzF4Hhilc (127.0.0.1) 22.89ms
+Uncaught exception POST /api/user/login?js_code=003Hhill2lEOd94eNxml23obzF4Hhilc (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login?js_code=003Hhill2lEOd94eNxml23obzF4Hhilc', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 49, in post
+    req_data = json.loads(self.request.body)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 49, in post
+    req_data = json.loads(self.request.body)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login?js_code=003Hhill2lEOd94eNxml23obzF4Hhilc (127.0.0.1) 25532.65ms
+Uncaught exception POST /api/user/login?js_code=003Hhill2lEOd94eNxml23obzF4Hhilc (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login?js_code=003Hhill2lEOd94eNxml23obzF4Hhilc', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 49, in post
+    req_data = json.loads(self.request.body)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 49, in post
+    req_data = json.loads(self.request.body)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login?js_code=003Hhill2lEOd94eNxml23obzF4Hhilc (127.0.0.1) 6720.76ms
+Uncaught exception POST /api/user/login?js_code=003Hhill2lEOd94eNxml23obzF4Hhilc (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login?js_code=003Hhill2lEOd94eNxml23obzF4Hhilc', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 49, in post
+    req_data = json.loads(self.request.body)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 49, in post
+    req_data = json.loads(self.request.body)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login?js_code=003Hhill2lEOd94eNxml23obzF4Hhilc (127.0.0.1) 6269.62ms
+200 POST /api/user/loginup?username=golden&password=123456 (127.0.0.1) 9451.08ms
+Uncaught exception POST /api/user/login?js_code=003Hhill2lEOd94eNxml23obzF4Hhilc (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login?js_code=003Hhill2lEOd94eNxml23obzF4Hhilc', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 49, in post
+    req_data = json.loads(self.request.body)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 49, in post
+    req_data = json.loads(self.request.body)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login?js_code=003Hhill2lEOd94eNxml23obzF4Hhilc (127.0.0.1) 8424.85ms
+Uncaught exception POST /api/user/login?js_code=003Hhill2lEOd94eNxml23obzF4Hhilc (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login?js_code=003Hhill2lEOd94eNxml23obzF4Hhilc', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 50, in post
+    data1 = data['js_code']
+TypeError: byte indices must be integers or slices, not str
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 50, in post
+    data1 = data['js_code']
+TypeError: byte indices must be integers or slices, not str
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login?js_code=003Hhill2lEOd94eNxml23obzF4Hhilc (127.0.0.1) 14973.60ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py modified; restarting server
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 51, in post
+    req_data = json.loads(self.request.body)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 5 (char 7)
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 51, in post
+    req_data = json.loads(self.request.body)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 5 (char 7)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 3.99ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 51, in post
+    req_data = json.loads(self.request.body)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 5 (char 7)
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 51, in post
+    req_data = json.loads(self.request.body)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 5 (char 7)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 2.96ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py modified; restarting server
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 58, in post
+    openid = user_info['openid']
+TypeError: 'NoneType' object is not subscriptable
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 58, in post
+    openid = user_info['openid']
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 134.82ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 58, in post
+    openid = user_info['openid']
+TypeError: 'NoneType' object is not subscriptable
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 58, in post
+    openid = user_info['openid']
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 23034.05ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 58, in post
+    openid = user_info['openid']
+TypeError: 'NoneType' object is not subscriptable
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 58, in post
+    openid = user_info['openid']
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 14277.02ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py modified; restarting server
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py modified; restarting server
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 58, in post
+    openid = user_info['openid']
+TypeError: 'NoneType' object is not subscriptable
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 58, in post
+    openid = user_info['openid']
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 253.58ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 58, in post
+    openid = user_info['openid']
+TypeError: 'NoneType' object is not subscriptable
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 58, in post
+    openid = user_info['openid']
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 199.46ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 59, in post
+    openid = user_info['openid']
+TypeError: 'NoneType' object is not subscriptable
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 59, in post
+    openid = user_info['openid']
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 18772.27ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 65, in post
+    User.save_user_session(
+AttributeError: type object 'User' has no attribute 'save_user_session'
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 65, in post
+    User.save_user_session(
+AttributeError: type object 'User' has no attribute 'save_user_session'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 46673.25ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 183, in get
+    return list(result)[0]
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 74, in post
+    user = await self.manager.get(WqUsers, openid=openid)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 185, in get
+    raise model.DoesNotExist
+app.models.teach.WqUsersDoesNotExist
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 183, in get
+    return list(result)[0]
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 74, in post
+    user = await self.manager.get(WqUsers, openid=openid)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 185, in get
+    raise model.DoesNotExist
+app.models.teach.WqUsersDoesNotExist
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 243.25ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 183, in get
+    return list(result)[0]
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 74, in post
+    user = await self.manager.get(WqUsers, openid=openid)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 185, in get
+    raise model.DoesNotExist
+app.models.teach.WqUsersDoesNotExist
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 183, in get
+    return list(result)[0]
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 74, in post
+    user = await self.manager.get(WqUsers, openid=openid)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 185, in get
+    raise model.DoesNotExist
+app.models.teach.WqUsersDoesNotExist
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 41643.22ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 183, in get
+    return list(result)[0]
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 74, in post
+    user = await self.manager.get(WqUsers, openid=openid)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 185, in get
+    raise model.DoesNotExist
+app.models.teach.WqUsersDoesNotExist
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 183, in get
+    return list(result)[0]
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 74, in post
+    user = await self.manager.get(WqUsers, openid=openid)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 185, in get
+    raise model.DoesNotExist
+app.models.teach.WqUsersDoesNotExist
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 13229.70ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py modified; restarting server
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py modified; restarting server
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 61, in post
+    openid = user_info['openid']
+KeyError: 'openid'
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 61, in post
+    openid = user_info['openid']
+KeyError: 'openid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 223.53ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 61, in post
+    openid = user_info['openid']
+KeyError: 'openid'
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 61, in post
+    openid = user_info['openid']
+KeyError: 'openid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 188.49ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 183, in get
+    return list(result)[0]
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 51, in post
+    user = await self.manager.get(WqUsers, openid=openid)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 185, in get
+    raise model.DoesNotExist
+app.models.teach.WqUsersDoesNotExist
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 183, in get
+    return list(result)[0]
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 51, in post
+    user = await self.manager.get(WqUsers, openid=openid)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 185, in get
+    raise model.DoesNotExist
+app.models.teach.WqUsersDoesNotExist
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 3191.66ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py modified; restarting server
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 82, in post
+    if user is None:
+UnboundLocalError: local variable 'user' referenced before assignment
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 82, in post
+    if user is None:
+UnboundLocalError: local variable 'user' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 17202.50ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 93, in post
+    'userid': user.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 93, in post
+    'userid': user.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 41392.20ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py modified; restarting server
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py modified; restarting server
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py modified; restarting server
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 62, in post
+    user.save()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 6621, in save
+    rows = self.update(**field_dict).where(self._pk_expr()).execute()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 1911, in inner
+    return method(self, database, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 1982, in execute
+    return self._execute(database)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2479, in _execute
+    cursor = database.execute(self)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 3173, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 990, in execute_sql
+    return super().execute_sql(*args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 3158, in execute_sql
+    cursor = self.cursor(commit)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 3142, in cursor
+    self.connect()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 3096, in connect
+    self._state.set_connection(self._connect())
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 4017, in _connect
+    conn = mysql.connect(db=self.database, **self.connect_params)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'minsize'
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 62, in post
+    user.save()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 6621, in save
+    rows = self.update(**field_dict).where(self._pk_expr()).execute()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 1911, in inner
+    return method(self, database, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 1982, in execute
+    return self._execute(database)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2479, in _execute
+    cursor = database.execute(self)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 3173, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 990, in execute_sql
+    return super().execute_sql(*args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 3158, in execute_sql
+    cursor = self.cursor(commit)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 3142, in cursor
+    self.connect()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 3096, in connect
+    self._state.set_connection(self._connect())
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 4017, in _connect
+    conn = mysql.connect(db=self.database, **self.connect_params)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'minsize'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 31.53ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 62, in post
+    user.save()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 6621, in save
+    rows = self.update(**field_dict).where(self._pk_expr()).execute()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 1911, in inner
+    return method(self, database, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 1982, in execute
+    return self._execute(database)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2479, in _execute
+    cursor = database.execute(self)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 3173, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 990, in execute_sql
+    return super().execute_sql(*args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 3158, in execute_sql
+    cursor = self.cursor(commit)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 3142, in cursor
+    self.connect()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 3096, in connect
+    self._state.set_connection(self._connect())
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 4017, in _connect
+    conn = mysql.connect(db=self.database, **self.connect_params)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'minsize'
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 62, in post
+    user.save()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 6621, in save
+    rows = self.update(**field_dict).where(self._pk_expr()).execute()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 1911, in inner
+    return method(self, database, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 1982, in execute
+    return self._execute(database)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2479, in _execute
+    cursor = database.execute(self)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 3173, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 990, in execute_sql
+    return super().execute_sql(*args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 3158, in execute_sql
+    cursor = self.cursor(commit)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 3142, in cursor
+    self.connect()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 3096, in connect
+    self._state.set_connection(self._connect())
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 4017, in _connect
+    conn = mysql.connect(db=self.database, **self.connect_params)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'minsize'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 35060.69ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py modified; restarting server
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py modified; restarting server
+200 POST /api/user/login (127.0.0.1) 21587.90ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 63, in post
+    await self.manager.update(WqUsers, uuid=user_uuid, session_key=session_key)
+TypeError: update() got an unexpected keyword argument 'uuid'
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 63, in post
+    await self.manager.update(WqUsers, uuid=user_uuid, session_key=session_key)
+TypeError: update() got an unexpected keyword argument 'uuid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 17056.73ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 63, in post
+    await self.manager.update(user, uuid=user_uuid, session_key=session_key)
+TypeError: update() got an unexpected keyword argument 'uuid'
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 63, in post
+    await self.manager.update(user, uuid=user_uuid, session_key=session_key)
+TypeError: update() got an unexpected keyword argument 'uuid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 9977.97ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py modified; restarting server
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py modified; restarting server
+200 POST /api/user/login (127.0.0.1) 20577.77ms
+200 POST /api/user/login (127.0.0.1) 22239.11ms
+200 GET /api/user/test/ (127.0.0.1) 1.00ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py modified; restarting server
+200 POST /api/user/login (127.0.0.1) 12925.73ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py modified; restarting server
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 60, in post
+    openid = user_info['openid']
+KeyError: 'openid'
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 60, in post
+    openid = user_info['openid']
+KeyError: 'openid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 206.90ms
+200 POST /api/user/login (127.0.0.1) 336.70ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\router.py modified; restarting server
+200 POST /api/phone/bing (127.0.0.1) 1.99ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py modified; restarting server
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py modified; restarting server
+200 POST /api/phone/bing (127.0.0.1) 19247.75ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py modified; restarting server
+200 POST /api/phone/bing (127.0.0.1) 1.04ms
+200 POST /api/phone/bing (127.0.0.1) 0.97ms
+200 POST /api/phone/bing (127.0.0.1) 11782.06ms
+Uncaught exception POST /api/phone/bing (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/phone/bing', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 52, in post
+    if wqBingPhone:
+UnboundLocalError: local variable 'wqBingPhone' referenced before assignment
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 52, in post
+    if wqBingPhone:
+UnboundLocalError: local variable 'wqBingPhone' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/phone/bing (127.0.0.1) 22798.19ms
+Uncaught exception POST /api/phone/bing (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/phone/bing', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 49, in post
+    wq_bing_phone = await self.manager.get(WqBingPhone, phone_no=phone)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 182, in get
+    result = await self.execute(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 572, in select
+    cursor = await _execute_query_async(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1460, in _run_sql
+    return cursor
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2933, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 52, in post
+    print(Exception.with_traceback())
+TypeError: descriptor 'with_traceback' of 'BaseException' object needs an argument
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 49, in post
+    wq_bing_phone = await self.manager.get(WqBingPhone, phone_no=phone)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 182, in get
+    result = await self.execute(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 572, in select
+    cursor = await _execute_query_async(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1460, in _run_sql
+    return cursor
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2933, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 52, in post
+    print(Exception.with_traceback())
+TypeError: descriptor 'with_traceback' of 'BaseException' object needs an argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/phone/bing (127.0.0.1) 5845.65ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\models\bingPhone.py modified; restarting server
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py modified; restarting server
+Uncaught exception POST /api/phone/bing (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/phone/bing', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 49, in post
+    wq_bing_phone = await self.manager.get(WqBingPhone, phone=phone)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 182, in get
+    result = await self.execute(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 572, in select
+    cursor = await _execute_query_async(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1460, in _run_sql
+    return cursor
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2933, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 52, in post
+    print(Exception.with_traceback())
+TypeError: descriptor 'with_traceback' of 'BaseException' object needs an argument
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 49, in post
+    wq_bing_phone = await self.manager.get(WqBingPhone, phone=phone)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 182, in get
+    result = await self.execute(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 572, in select
+    cursor = await _execute_query_async(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1460, in _run_sql
+    return cursor
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2933, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 52, in post
+    print(Exception.with_traceback())
+TypeError: descriptor 'with_traceback' of 'BaseException' object needs an argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/phone/bing (127.0.0.1) 12.77ms
+Uncaught exception POST /api/phone/bing (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/phone/bing', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 48, in post
+    wq_bing_phone = await self.manager.get(WqBingPhone, phone=phone)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 182, in get
+    result = await self.execute(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 572, in select
+    cursor = await _execute_query_async(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1460, in _run_sql
+    return cursor
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2933, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 48, in post
+    wq_bing_phone = await self.manager.get(WqBingPhone, phone=phone)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 182, in get
+    result = await self.execute(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 572, in select
+    cursor = await _execute_query_async(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1460, in _run_sql
+    return cursor
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2933, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/phone/bing (127.0.0.1) 5617.36ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\HttpHandler.py modified; restarting server
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\HttpHandler.py modified; restarting server
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py modified; restarting server
+Uncaught exception POST /api/phone/bing (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/phone/bing', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 48, in post
+    wq_bing_phone = await self.manager.get(WqBingPhone, phone=phone)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 182, in get
+    result = await self.execute(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 572, in select
+    cursor = await _execute_query_async(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1460, in _run_sql
+    return cursor
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2933, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 48, in post
+    wq_bing_phone = await self.manager.get(WqBingPhone, phone=phone)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 182, in get
+    result = await self.execute(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 572, in select
+    cursor = await _execute_query_async(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1460, in _run_sql
+    return cursor
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2933, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/phone/bing (127.0.0.1) 13.96ms
+Uncaught exception POST /api/phone/bing (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/phone/bing', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 48, in post
+    wq_bing_phone = await self.manager.get(WqBingPhone, phone=phone)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 182, in get
+    result = await self.execute(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 572, in select
+    cursor = await _execute_query_async(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1460, in _run_sql
+    return cursor
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2933, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 48, in post
+    wq_bing_phone = await self.manager.get(WqBingPhone, phone=phone)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 182, in get
+    result = await self.execute(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 572, in select
+    cursor = await _execute_query_async(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1460, in _run_sql
+    return cursor
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2933, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/phone/bing (127.0.0.1) 4909.43ms
+Uncaught exception POST /api/phone/bing (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/phone/bing', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 48, in post
+    wq_bing_phone = await self.manager.get(WqBingPhone, phone=phone)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 182, in get
+    result = await self.execute(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 572, in select
+    cursor = await _execute_query_async(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1460, in _run_sql
+    return cursor
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2933, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 48, in post
+    wq_bing_phone = await self.manager.get(WqBingPhone, phone=phone)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 182, in get
+    result = await self.execute(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 572, in select
+    cursor = await _execute_query_async(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1460, in _run_sql
+    return cursor
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2933, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/phone/bing (127.0.0.1) 12583.35ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\models\BaseModel.py modified; restarting server
+Uncaught exception POST /api/phone/bing (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/phone/bing', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 48, in post
+    wq_bing_phone = await self.manager.get(WqBingPhone, phone=phone)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 182, in get
+    result = await self.execute(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 572, in select
+    cursor = await _execute_query_async(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1460, in _run_sql
+    return cursor
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2933, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 48, in post
+    wq_bing_phone = await self.manager.get(WqBingPhone, phone=phone)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 182, in get
+    result = await self.execute(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 572, in select
+    cursor = await _execute_query_async(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1460, in _run_sql
+    return cursor
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2933, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/phone/bing (127.0.0.1) 5361.40ms
+Uncaught exception POST /api/phone/bing (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/phone/bing', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 51, in post
+    wq_bing_phone = await self.manager.get(WqBingPhone, id=2)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 182, in get
+    result = await self.execute(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 572, in select
+    cursor = await _execute_query_async(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1460, in _run_sql
+    return cursor
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2933, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 54, in post
+    print(Exception.with_traceback())
+TypeError: descriptor 'with_traceback' of 'BaseException' object needs an argument
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 51, in post
+    wq_bing_phone = await self.manager.get(WqBingPhone, id=2)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 182, in get
+    result = await self.execute(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 572, in select
+    cursor = await _execute_query_async(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1460, in _run_sql
+    return cursor
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2933, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.InternalError: (1054, "Unknown column 't1.create_time' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 54, in post
+    print(Exception.with_traceback())
+TypeError: descriptor 'with_traceback' of 'BaseException' object needs an argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/phone/bing (127.0.0.1) 20565.73ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\models\BaseModel.py modified; restarting server
+200 POST /api/phone/bing (127.0.0.1) 26963.42ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py modified; restarting server
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py modified; restarting server
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py modified; restarting server
+200 POST /api/phone/bing (127.0.0.1) 27361.85ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py modified; restarting server
+200 POST /api/phone/bing (127.0.0.1) 11235.58ms
+200 POST /api/phone/bing (127.0.0.1) 15099.18ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py modified; restarting server
+200 POST /api/phone/bing (127.0.0.1) 14754.94ms
+Uncaught exception POST /api/phone/bing (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/phone/bing', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 65, in post
+    self.finish(to_dict_msg(code=200, msg='绑定成功'))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1124, in finish
+    raise RuntimeError("finish() called twice")
+RuntimeError: finish() called twice
+200 POST /api/phone/bing (127.0.0.1) 8271.64ms
+200 POST /api/phone/bing (127.0.0.1) 5.98ms
+Uncaught exception POST /api/phone/bing (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/phone/bing', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 76, in post
+    self.finish(to_dict_msg(code=200, msg='绑定成功'))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1124, in finish
+    raise RuntimeError("finish() called twice")
+RuntimeError: finish() called twice
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py modified; restarting server
+200 POST /api/phone/bing (127.0.0.1) 6.02ms
+Uncaught exception POST /api/phone/bing (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/phone/bing', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 77, in post
+    self.finish(to_dict_msg(code=200, msg='绑定成功'))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1124, in finish
+    raise RuntimeError("finish() called twice")
+RuntimeError: finish() called twice
+200 POST /api/phone/bing (127.0.0.1) 10.97ms
+Uncaught exception POST /api/phone/bing (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/phone/bing', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 77, in post
+    self.finish(to_dict_msg(code=200, msg='绑定成功'))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1124, in finish
+    raise RuntimeError("finish() called twice")
+RuntimeError: finish() called twice
+200 POST /api/phone/sms (127.0.0.1) 42524.61ms
+Uncaught exception POST /api/phone/sms (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/phone/sms', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 183, in get
+    return list(result)[0]
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 40, in post
+    wq_bing_phone = await self.manager.get(WqBingPhone, phone=phone)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 185, in get
+    raise model.DoesNotExist
+app.models.bingPhone.WqBingPhoneDoesNotExist
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 44, in post
+    print(Exception.with_traceback())
+TypeError: descriptor 'with_traceback' of 'BaseException' object needs an argument
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 183, in get
+    return list(result)[0]
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 40, in post
+    wq_bing_phone = await self.manager.get(WqBingPhone, phone=phone)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 185, in get
+    raise model.DoesNotExist
+app.models.bingPhone.WqBingPhoneDoesNotExist
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 44, in post
+    print(Exception.with_traceback())
+TypeError: descriptor 'with_traceback' of 'BaseException' object needs an argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/phone/sms (127.0.0.1) 16350.51ms
+Uncaught exception POST /api/phone/sms (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/phone/sms', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 45, in post
+    if wq_bing_phone:
+UnboundLocalError: local variable 'wq_bing_phone' referenced before assignment
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 45, in post
+    if wq_bing_phone:
+UnboundLocalError: local variable 'wq_bing_phone' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/phone/sms (127.0.0.1) 25125.03ms
+Uncaught exception POST /api/phone/sms (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/phone/sms', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 49, in post
+    if wq_bing_phone is None:
+UnboundLocalError: local variable 'wq_bing_phone' referenced before assignment
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py", line 49, in post
+    if wq_bing_phone is None:
+UnboundLocalError: local variable 'wq_bing_phone' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/phone/sms (127.0.0.1) 18627.08ms
+200 POST /api/phone/sms (127.0.0.1) 21750.95ms
+200 POST /api/phone/sms (127.0.0.1) 18593.37ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MessageHandler.py modified; restarting server
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\router.py modified; restarting server
+Uncaught exception POST /api/child/more (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/child/more', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\ChildPhoneHandler.py", line 20, in post
+    phone = json.loads(phones)[0]
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not list
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\ChildPhoneHandler.py", line 20, in post
+    phone = json.loads(phones)[0]
+  File "C:\Users\golden\.conda\envs\tf115\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/child/more (127.0.0.1) 8546.81ms
+200 POST /api/child/more (127.0.0.1) 42990.97ms
+Uncaught exception POST /api/child/more (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/child/more', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '23' for key 'userId'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\ChildPhoneHandler.py", line 39, in post
+    wq_bing_phone = await self.manager.create(WqChildPhone, phone=phone, userid=userid)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 193, in create
+    pk = await self.execute(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 595, in insert
+    cursor = await _execute_query_async(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1460, in _run_sql
+    return cursor
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2933, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.IntegrityError: (1062, "Duplicate entry '23' for key 'userId'")
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '23' for key 'userId'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\ChildPhoneHandler.py", line 39, in post
+    wq_bing_phone = await self.manager.create(WqChildPhone, phone=phone, userid=userid)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 193, in create
+    pk = await self.execute(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 595, in insert
+    cursor = await _execute_query_async(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1460, in _run_sql
+    return cursor
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2933, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.IntegrityError: (1062, "Duplicate entry '23' for key 'userId'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/child/more (127.0.0.1) 55257.64ms
+Uncaught exception POST /api/child/more (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/child/more', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '23' for key 'userId'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\ChildPhoneHandler.py", line 39, in post
+    wq_bing_phone = await self.manager.create(WqChildPhone, phone=phone, userid=userid)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 193, in create
+    pk = await self.execute(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 595, in insert
+    cursor = await _execute_query_async(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1460, in _run_sql
+    return cursor
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2933, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.IntegrityError: (1062, "Duplicate entry '23' for key 'userId'")
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '23' for key 'userId'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\ChildPhoneHandler.py", line 39, in post
+    wq_bing_phone = await self.manager.create(WqChildPhone, phone=phone, userid=userid)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 193, in create
+    pk = await self.execute(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 433, in execute
+    return (await coroutine(query))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 595, in insert
+    cursor = await _execute_query_async(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1472, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1460, in _run_sql
+    return cursor
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 2933, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\peewee_async.py", line 1455, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.IntegrityError: (1062, "Duplicate entry '23' for key 'userId'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/child/more (127.0.0.1) 26317.67ms
+200 POST /api/child/more (127.0.0.1) 10901.34ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 60, in post
+    openid = user_info['openid']
+KeyError: 'openid'
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 60, in post
+    openid = user_info['openid']
+KeyError: 'openid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 210.99ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 61, in post
+    openid = user_info['openid']
+KeyError: 'openid'
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 61, in post
+    openid = user_info['openid']
+KeyError: 'openid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 5631.29ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 61, in post
+    if user_info['openid'] is None :
+KeyError: 'openid'
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 61, in post
+    if user_info['openid'] is None :
+KeyError: 'openid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 500
+500 POST /api/user/login (127.0.0.1) 7118.03ms
+200 POST /api/user/login (127.0.0.1) 9291.74ms
+Uncaught exception POST /api/user/login (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/user/login', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\UserHandler.py", line 69, in post
+    session_key = user_info['session_key']
+KeyError: 'session_key'
+200 POST /api/user/login (127.0.0.1) 9023.02ms
+200 POST /api/child/more (127.0.0.1) 12738.62ms

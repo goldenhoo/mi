@@ -1,0 +1,95 @@
+Uncaught exception GET /api/mysql (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='GET', uri='/api/mysql', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1704, in _execute
+    result = await result
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MysqlHandler.py", line 25, in get
+    data = await self.execute("select * from users limit 10")
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MysqlHandler.py", line 17, in execute
+    await cur.execute(sql, args)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 428, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 620, in _read_query_result
+    await result.read()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 1103, in read
+    first_packet = await self.connection._read_packet()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\aiomysql\connection.py", line 591, in _read_packet
+    packet.check_error()
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'teach.users' doesn't exist")
+500 GET /api/mysql (127.0.0.1) 20.94ms
+D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\MysqlHandler.py modified; restarting server
+200 GET /api/mysql (127.0.0.1) 15.00ms
+200 GET /api/user/get/?id=7 (127.0.0.1) 0.00ms
+200 POST /api/file (127.0.0.1) 9.32ms
+200 GET /api/user/test/ (127.0.0.1) 1.03ms
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1702, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 264, in _unimplemented_method
+    raise HTTPError(405)
+tornado.web.HTTPError: HTTP 405: Method Not Allowed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 405
+405 GET /api/user/login?username=golden&password=123456 (127.0.0.1) 9.94ms
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1702, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 264, in _unimplemented_method
+    raise HTTPError(405)
+tornado.web.HTTPError: HTTP 405: Method Not Allowed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 405
+405 GET /api/user/login?username=golden&password=123456 (127.0.0.1) 3.44ms
+Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1702, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 264, in _unimplemented_method
+    raise HTTPError(405)
+tornado.web.HTTPError: HTTP 405: Method Not Allowed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\golden\.conda\envs\tf115\lib\site-packages\tornado\web.py", line 1217, in send_error
+    self.write_error(status_code, **kwargs)
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\handlers\BaseHandler.py", line 40, in write_error
+    result = resp_json(code=status_code, error={"msg": message})
+  File "D:\goodChild\project\wangyi_api-master\wangyi_api-master\app\utils\response_format.py", line 66, in resp_json
+    kwargs["message"] = error_map[kwargs["code"]]
+KeyError: 405
+405 GET /api/user/login?username=golden&password=123456 (127.0.0.1) 2.00ms
+200 POST /api/user/login?username=golden&password=123456 (127.0.0.1) 53785.51ms
+200 POST /api/user/login?username=golden&password=123456 (127.0.0.1) 17.01ms
+200 GET /api/user/get/?id=7 (127.0.0.1) 2.99ms
+200 GET /api/user/test/ (127.0.0.1) 1.03ms
+200 POST /api/user/login?username=golden&password=123456 (127.0.0.1) 1.00ms
+200 POST /api/user/login?username=golden&password=123456 (127.0.0.1) 0.97ms
